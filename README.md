@@ -25,3 +25,9 @@ CSC 453 Final Project
 * Before running, update the information on lines 16 and 17 of weatherstation.py to reflect the address of your MQTT broker (host and port).
 * To run, use the following command: **python weatherstation.py**.
 * Compiled and tested on Raspberry Pi, Python 2.7.
+### Device B Implementation
+* If the temperature is above 80 degrees, it is warm.
+* If the temperature is between 60 and 80 degrees, it is comfortable.
+* If the temperature is between 45 and 60 degrees, it is chilly.
+* If the temperature is below 45 degrees, it is cold.
+* If the temperature is above 75 degrees and the humidity is above 55%, it is muggy.
