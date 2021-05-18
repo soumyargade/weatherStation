@@ -12,8 +12,8 @@ CSC 453 Final Project
 ### System Design
 
 <p float="left">
-  <img src="https://github.com/soumyargade/weatherStation/blob/main/systemdesign.png" width="475">
-  <img src="https://github.com/soumyargade/weatherStation/blob/main/sensordiagram.png" width="378">
+  <img src="https://github.com/soumyargade/weatherStation/blob/main/systemdesign.png" width="350">
+  <img src="https://github.com/soumyargade/weatherStation/blob/main/sensordiagram.png" width="300">
 </p>
 
 ### Broker ReadMe
