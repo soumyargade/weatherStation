@@ -12,8 +12,8 @@ CSC 453 Final Project
 ### System Design
 
 <p float="left">
-  <img src="https://github.com/soumyargade/weatherStation/blob/main/systemdesign.png" width="390">
-  <img src="https://github.com/soumyargade/weatherStation/blob/main/sensordiagram.png" width="280">
+  <img src="https://github.com/soumyargade/weatherStation/blob/main/images/systemdesign.png" width="390">
+  <img src="https://github.com/soumyargade/weatherStation/blob/main/images/sensordiagram.png" width="280">
 </p>
 
 ### Broker ReadMe
@@ -31,3 +31,4 @@ CSC 453 Final Project
 * If the temperature is between 45 and 60 degrees, it is chilly.
 * If the temperature is below 45 degrees, it is cold.
 * If the temperature is above 75 degrees and the humidity is above 55%, it is muggy.
+<img src="https://github.com/soumyargade/weatherStation/blob/main/images/webpage.png" width="500">
