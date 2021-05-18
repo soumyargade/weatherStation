@@ -1,5 +1,16 @@
 # Weather Station
 CSC 453 Final Project
+### Objectives
+* Create a system which can provide temperature and humidity statistics.
+* Use the weather station's statistics to compare against local weather.
+* Provide a meaningful message about the state of the weather.
+* Convey the weather station and the local weather using an attractive webpage.
+### System Components
+* Use a temperature and humidity two-in-one sensor and connect it to a Raspberry Pi, which will serve as the Weather Station Pi.
+* Using Mosquitto as an MQTT broker to post the sensor data to, running on a separate device.
+* Code on a third device to subscribe to the broker and produce an output for the system.
+### System Design
+Insert Here.
 ### Broker ReadMe
 * Computer #1 runs Mosquitto locally and acts as the MQTT broker server. It handles all messages from the clients and then routes the messages to the appropriate destination clients.
 * **Prerequisites & Dependencies**: Mosquitto from their website. Update config file for broker to CSC 453 requirements, and store in \mosquitto folder. Port forward port 1883 on broker's router to host that broker is run on. Disable any firewalls for stuff coming from port 1883.
