@@ -10,7 +10,8 @@ CSC 453 Final Project
 * Using Mosquitto as an MQTT broker to post the sensor data to, running on a separate device.
 * Code on a third device to subscribe to the broker and produce an output for the system.
 ### System Design
-Insert Here.
+![system design](https://github.com/soumyargade/weatherStation/blob/main/systemdesign.png)
+![sensor diagram](https://github.com/soumyargade/weatherStation/blob/main/sensordiagram.png)
 ### Broker ReadMe
 * Computer #1 runs Mosquitto locally and acts as the MQTT broker server. It handles all messages from the clients and then routes the messages to the appropriate destination clients.
 * **Prerequisites & Dependencies**: Mosquitto from their website. Update config file for broker to CSC 453 requirements, and store in \mosquitto folder. Port forward port 1883 on broker's router to host that broker is run on. Disable any firewalls for stuff coming from port 1883.
