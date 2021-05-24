@@ -6,7 +6,7 @@ CSC 453 Final Project
 * Provide a meaningful message about the state of the weather.
 * Convey the weather station and the local weather using an attractive webpage.
 ### System Design
-* Connected a temperature and humidity sensor to a Raspberry Pi (Device A) to collect the temperature and humidity data. Weather Station Pi collects the sensor information, and then connects to the broker to publish updates of temperature and humidity values.
+* Connected a temperature and humidity sensor to a Raspberry Pi (Device A) to collect the temperature and humidity data. Device A collects the sensor information, and then connects to the broker to publish updates of temperature and humidity values.
 * The MQTT broker oversees transmission of data from Device A (which collects sensor data) and Device B (which analyzes sensor data). When the broker is online, Device B subscribes to the temperature and humidity topics to analyze the data.
 * Device B analyzes the data to provide weather descriptions based off temperature and humidity thresholds. It then sends over all of this information to the front-end app which displays it to the user. The front-end app also gets the local weather station information based on the zip code entered by the user.
 <p float="left">
