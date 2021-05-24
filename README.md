@@ -7,10 +7,12 @@ CSC 453 Final Project
 * Convey the weather station and the local weather using an attractive webpage.
 ### System Components
 * Use a temperature and humidity two-in-one sensor and connect it to a Raspberry Pi, which will serve as the Weather Station Pi.
-* Using Mosquitto as an MQTT broker to post the sensor data to, running on a separate device.
+* Use Mosquitto as an MQTT broker to post the sensor data to, running on a separate device.
 * Code on a third device to subscribe to the broker and produce an output for the system.
 ### System Design
-
+* Connected a temperature and humidity sensor to a Raspberry Pi (Weather Station Pi) to collect the temperature and humidity data. Weather Station Pi collects the sensor information, and then connects to the broker to publish updates of temperature and humidity values.
+* The MQTT broker oversees transmission of data from Device A (which collects sensor data) and Device B (which analyzes sensor data). When the broker is online, Device B subscribes to the temperature and humidity topics to analyze the data.
+* Device B analyzes the data to provide weather descriptions based off temperature and humidity thresholds. It then sends over all of this information to the front-end app which displays it to the user. The front-end app also gets the local weather station information based on the zip code entered by the user.
 <p float="left">
   <img src="https://github.com/soumyargade/weatherStation/blob/main/images/systemdesign.png" width="390">
   <img src="https://github.com/soumyargade/weatherStation/blob/main/images/sensordiagram.png" width="280">
